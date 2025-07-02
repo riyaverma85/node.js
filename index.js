@@ -5,20 +5,20 @@
 //     res.end();
 // }).listen(4000 )
 
-const http=require("http");
-http.createServer((req,res)=>{
-    res.write("<h1>i am shivani class of node js<h1/>");
-    res.end();
-}).listen(8000)
-
 // const http=require("http");
-// const Nm= require("./cybrom")
 // http.createServer((req,res)=>{
-//     res.write("<h1>Welcome to cybrom class<h1/>");
-//     res.write(Nm.myName());
-//     res.write(Nm.myClass());
-//     res.end("<h3>thank you for visiting</h3/>");
-// }).listen(5000)
+//     res.write("<h1>i am shivani class of node js<h1/>");
+//     res.end();
+// }).listen(8000)
+
+const http=require("http");
+const Nm= require("./cybrom")
+http.createServer((req,res)=>{
+    res.write("<h1>Welcome to cybrom class<h1/>");
+    res.write(Nm.myName());
+    res.write(Nm.myClass());
+    res.end("<h3>thank you for visiting</h3/>");
+}).listen(5000)
 
 
 // var http=require("http");
