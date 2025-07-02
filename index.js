@@ -51,7 +51,7 @@
 //     console.log("File Created");
 // })
 
-
+//============================================FILE SYSTEM MODULE(ISSE BHI NYII FILE CREATE KARNA OPEN KA USE KARKE)============================================================
 
 // const fs=require("fs");
 
@@ -59,6 +59,12 @@
 //     if(err) throw err;
 //     console.log("File Created");
 // })
+ const fs=require("fs");
+
+fs.writeFile("proj.txt","i am soft developer",(err)=>{
+    if(err) throw err;
+    console.log("File Created");
+})
 
 // const fs=require("fs");
 
