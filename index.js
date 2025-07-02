@@ -5,6 +5,12 @@
 //     res.end();
 // }).listen(4000 )
 
+const http=require("http");
+http.createServer((req,res)=>{
+    res.write("<h1>i am shivani class of node js<h1/>");
+    res.end();
+}).listen(8000)
+
 // const http=require("http");
 // const Nm= require("./cybrom")
 // http.createServer((req,res)=>{
@@ -43,9 +49,25 @@
 //     console.log("File Created");
 // })
 
-const fs=require("fs");
+// const fs=require("fs");
 
-fs.writeFile("pro.txt","i am soft developer",(err)=>{
-    if(err) throw err;
-    console.log("File Created");
-})
+// fs.writeFile("proj.txt","i am soft developer",(err)=>{
+//     if(err) throw err;
+//     console.log("File Created");
+// })
+
+// const fs=require("fs");
+
+// fs.unlink("proj.txt",(err)=>{
+//     if(err) throw err;
+//     console.log("File Deleted");
+// })
+
+
+//=============================================FILE RENAME==================================================================================
+// const fs=require("fs");
+
+// fs.rename( "pro.txt","proto.txt",(err)=>{
+//     if(err) throw err;
+//     console.log("File Renamed!!");
+// })
