@@ -52,19 +52,15 @@
 // })
 
 //============================================FILE SYSTEM MODULE(ISSE BHI NYII FILE CREATE KARNA OPEN KA USE KARKE)============================================================
-
+//LEKIN isme data aa jata file me but lekin agar data me chnage krte h to ohle vale data se replace ho jata h phle ka s=data chala jata h
 // const fs=require("fs");
 
 // fs.writeFile("proj.txt","i am soft developer",(err)=>{
 //     if(err) throw err;
 //     console.log("File Created");
 // })
- const fs=require("fs");
+ 
 
-fs.writeFile("proj.txt","i am soft developer",(err)=>{
-    if(err) throw err;
-    console.log("File Created");
-})
 
 // const fs=require("fs");
 
