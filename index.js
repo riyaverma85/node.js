@@ -11,25 +11,25 @@
 //     res.end();
 // }).listen(8000)
 
-const http=require("http");
-const Nm= require("./cybrom")
-http.createServer((req,res)=>{
-    res.write("<h1>Welcome to cybrom class<h1/>");
-    res.write(Nm.myName());
-    res.write(Nm.myClass());
-    res.end("<h3>thank you for visiting</h3/>");
-}).listen(5000)
-
-
-// var http=require("http");
-// var fs=require("fs");
+// const http=require("http");
+// const Nm= require("./cybrom")
 // http.createServer((req,res)=>{
-//     fs.readFile("shiv.txt",(err,data)=>{
-//         if(err) throw err;
-//         res.write(data);
-//         res.end();
-//     })
-// }).listen(7000);
+//     res.write("<h1>Welcome to cybrom class<h1/>");
+//     res.write(Nm.myName());
+//     res.write(Nm.myClass());
+//     res.end("<h3>thank you for visiting</h3/>");
+// }).listen(5000)
+
+
+var http=require("http");
+var fs=require("fs");
+http.createServer((req,res)=>{
+    fs.readFile("shiv.txt",(err,data)=>{
+        if(err) throw err;
+        res.write(data);
+        res.end();
+    })
+}).listen(7000);
 
 
 
