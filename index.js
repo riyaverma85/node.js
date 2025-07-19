@@ -78,11 +78,55 @@
 //     console.log("File Renamed!!");
 // })
 
-//=======================================================================================================================================================
+//======================================================UPPERCASE SB KUCHH CAPITAL ME AA JAYEGA =================================================================================================
 
-const http=require("http");
-const uc=require("uppercase");
-http.createServer((req,res)=>{
-     res.write(uc("<h1>Welcome to my Node.js server</h1>"));
-     res.end("<h1>server is running on port 4000</h1>");
-}).listen(4000);
+// const http=require("http");
+// const uc=require("uppercase");
+// http.createServer((req,res)=>{
+//      res.write(uc("<h1>Welcome to my Node.js server</h1>"));
+//      res.end("<h1>server is running on port 4000</h1>");
+// }).listen(4000);
+
+//====================================================EXPRESS START HERE================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const express=require("express");
+const app=express();
+app.get("/",(req,res)=>{
+    res.send("<h1>Welcome to my root page!!</h1>");
+})
+app.get("/home",(req,res)=>{
+    res.send("<h1>Welcome to my home page</h1>");
+})
+
+app.get("/about",(req,res)=>{
+    res.send("<h1>Welcome to my about page</h1>");
+})
+app.get("/service",(req,res)=>{
+    res.send("<h1>Welcome to my service page</h1>");
+})
+app.get("/photo",(req,res)=>{
+    res.send("<h1>Welcome to my photo page</h1>");
+})
+app.get("/contact",(req,res)=>{
+   res.send("<h1>Welcome to my contact page</h1>");
+})
+
+app.listen(4000,()=>{
+
+    console.log("server is running on port 4000");
+})
