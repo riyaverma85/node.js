@@ -15,5 +15,5 @@ route.get("/result",(req,res)=>{
    res.send("<h1>Welcome to my result page</h1>");
 })
 
-
+ 
 module.exports=route;
