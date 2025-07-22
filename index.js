@@ -119,12 +119,23 @@
 
 //================================================using routes=============================================================
 
+// const express=require("express");
+// const app=express();
+// const stuRoute=require("./routes/stuRoutes");
+// const teaRoute=require("./routes/teacher");
+//  app.use("/students", stuRoute)
+//  app.use("/teachers",teaRoute)
+
+// app.listen(4000,()=>{
+//      console.log("server is running on port 4000");
+
+// })
+
+//================================================using controllers======================================================================
+
 const express=require("express");
 const app=express();
-const stuRoute=require("./routes/stuRoutes");
-const teaRoute=require("./routes/teacher");
- app.use("/students", stuRoute)
- app.use("/teachers",teaRoute)
+
 
 app.listen(4000,()=>{
      console.log("server is running on port 4000");
