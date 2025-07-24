@@ -5,6 +5,7 @@ const controllerEjs=require("../controllers/controllerEjs");
 route.get("/",controllerEjs.homepage)
 route.get("/about",controllerEjs.aboutpage)
 route.get("/service",controllerEjs.servicepage)
+route.get("/gallery",controllerEjs.gallerypage)
 
 
 module.exports=route;

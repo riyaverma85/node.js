@@ -9,10 +9,10 @@ const servicepage=(req,res)=>{
     res.render("service");
 }
 const gallerypage=(req,res)=>{
-    res.render("service");
+    res.render("gallery");
 }
 const contactpage=(req,res)=>{
-    res.render("home");
+    res.render("contact");
 }
 
 module.exports={
