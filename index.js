@@ -155,6 +155,6 @@ const stuRouteEjs=require("./route/stuRouteEjs");
 app.set("view engine","ejs");
 app.use("/",stuRouteEjs);
 
-app.listen(6000,()=>{
-     console.log("server is running on port 6000");
+app.listen(4000,()=>{
+     console.log("server is running on port 4000");
 })
