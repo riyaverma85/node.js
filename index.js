@@ -133,14 +133,26 @@
 
 //================================================using controllers======================================================================
 
+// const express=require("express");
+// const app=express();
+
+// const empRoute=require("./route/empRouts");
+
+// app.use("/employee",empRoute)
+
+// app.listen(5000,()=>{
+//      console.log("server is running on port 4000");
+
+// })
+
+
+
+//=========================================================VIEW ENGINE USING EJS====================================================
+
 const express=require("express");
 const app=express();
 
-const empRoute=require("./route/empRouts");
 
-app.use("/employee",empRoute)
-
-app.listen(5000,()=>{
-     console.log("server is running on port 4000");
-
+app.listen(6000,()=>{
+     console.log("server is running on port 6000");
 })
