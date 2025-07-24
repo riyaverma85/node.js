@@ -3,10 +3,10 @@ const homepage=(req,res)=>{
     res.render("home");
 }
 const aboutpage=(req,res)=>{
-    res.render("home");
+    res.render("about");
 }
 const servicepage=(req,res)=>{
-    res.render("home");
+    res.render("service");
 }
 const gallerypage=(req,res)=>{
     res.render("home");
