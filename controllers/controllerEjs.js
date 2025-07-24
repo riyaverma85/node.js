@@ -9,7 +9,7 @@ const servicepage=(req,res)=>{
     res.render("service");
 }
 const gallerypage=(req,res)=>{
-    res.render("home");
+    res.render("service");
 }
 const contactpage=(req,res)=>{
     res.render("home");
